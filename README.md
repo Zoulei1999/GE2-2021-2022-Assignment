@@ -1,9 +1,17 @@
-Zoulei1999/GE2-2021-2022-Assignment# GE2-2021-2022-Assignment
+# GE2-2021-2022-Assignment
 This is my assignment for games engine .
 
 For my assignment i want to make the destruction of alderaan from star wars in episode 4 of Star Wars. A new hope.
 
 I chose this scene due to the fact that it was one of the first scifi movies i ever saw and it helped form my taste in entertainment.
+
+______________________________________________________________________________________________________________________________________
+
+# Idea Change
+
+After making the project i changed the scene to one similar to a scene from star wars battlefront
+
+[Link to video](https://www.youtube.com/watch?v=pvKFHYb0oCU)
 
 # Description
 - Richard Zou
