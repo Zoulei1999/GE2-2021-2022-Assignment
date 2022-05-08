@@ -18,7 +18,7 @@ class Patrol : State
         if (Vector3.Distance(owner.GetComponent<Leader>().Star.transform.position,
             owner.transform.position) < 500)
         {
-            owner.ChangeState(new LeaderFindTargetState());
+            owner.ChangeState(new LeaderFindTarget());
         }
     }
 
@@ -28,7 +28,7 @@ class Patrol : State
     }
 }
 
-class LeaderFindTargetState : State
+class LeaderFindTarget : State
 {
     public override void Enter()
     {
@@ -45,7 +45,7 @@ class LeaderFindTargetState : State
         if (Vector3.Distance(owner.GetComponent<Leader>().enemy.transform.position,
             owner.transform.position) < 500)
         {
-            owner.ChangeState(new LeaderAttackState());
+            owner.ChangeState(new LeaderAttack());
         }
     }
 
@@ -55,7 +55,7 @@ class LeaderFindTargetState : State
     }
 }
 
-class LeaderAttackState : State
+class LeaderAttack : State
 {
     AudioSource fireSound;
     
@@ -80,7 +80,7 @@ class LeaderAttackState : State
 
         if (toEnemy.magnitude < 50)
         {
-            owner.ChangeState(new LeaderFleeState());
+            owner.ChangeState(new LeaderFlee());
         }
     }
 
@@ -90,7 +90,7 @@ class LeaderAttackState : State
     }
 }
 
-class LeaderFleeState : State
+class LeaderFlee : State
 {
     public override void Enter()
     {
@@ -107,7 +107,7 @@ class LeaderFleeState : State
         Vector3 toEnemy = owner.GetComponent<Leader>().enemy.transform.position - owner.transform.position;
         if (toEnemy.magnitude > 200)
         {
-            owner.ChangeState(new LeaderAttackState());
+            owner.ChangeState(new LeaderAttack());
         }
     }
 
