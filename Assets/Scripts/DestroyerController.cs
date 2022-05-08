@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-class Engage : State
+class Entry : State
 {
     public override void Enter()
     {
@@ -26,6 +26,6 @@ public class DestroyerController : MonoBehaviour
 {
     void Start()
     {
-        GetComponent<StateMachine>().ChangeState(new Engage());
+        GetComponent<StateMachine>().ChangeState(new Entry());
     }
 }

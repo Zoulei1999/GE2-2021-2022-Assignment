@@ -55,6 +55,36 @@ class LeaderFindTarget : State
     }
 }
 
+class LeaderFlee : State
+{
+    public override void Enter()
+    {
+        owner.GetComponent<Boid>().maxSpeed += 10;
+        owner.GetComponent<Boid>().maxForce += 5;
+        owner.GetComponent<Flee>().target = owner.GetComponent<Leader>().enemy.transform.position;
+        owner.GetComponent<Flee>().enabled = true;
+        owner.GetComponent<Contain>().center = GameObject.Find("Death Star Position").transform;
+        owner.GetComponent<Contain>().enabled = true;
+    }
+
+    public override void Think()
+    {
+        Vector3 toEnemy = owner.GetComponent<Leader>().enemy.transform.position - owner.transform.position;
+        if (toEnemy.magnitude > 200)
+        {
+            owner.ChangeState(new LeaderAttack());
+        }
+    }
+
+    public override void Exit()
+    {
+        owner.GetComponent<Boid>().maxSpeed -= 10;
+        owner.GetComponent<Boid>().maxForce -= 5;
+        owner.GetComponent<Flee>().enabled = false;
+    }
+}
+
+
 class LeaderAttack : State
 {
     AudioSource fireSound;
@@ -90,32 +120,17 @@ class LeaderAttack : State
     }
 }
 
-class LeaderFlee : State
+class LeaderDead : State
 {
     public override void Enter()
     {
-        owner.GetComponent<Boid>().maxSpeed += 10;
-        owner.GetComponent<Boid>().maxForce += 5;
-        owner.GetComponent<Flee>().target = owner.GetComponent<Leader>().enemy.transform.position;
-        owner.GetComponent<Flee>().enabled = true;
-        owner.GetComponent<Contain>().center = GameObject.Find("Death Star Position").transform;
-        owner.GetComponent<Contain>().enabled = true;
-    }
-
-    public override void Think()
-    {
-        Vector3 toEnemy = owner.GetComponent<Leader>().enemy.transform.position - owner.transform.position;
-        if (toEnemy.magnitude > 200)
+        SteeringBehaviour[] sbs = owner.GetComponent<Boid>().GetComponents<SteeringBehaviour>();
+        foreach (SteeringBehaviour sb in sbs)
         {
-            owner.ChangeState(new LeaderAttack());
+            sb.enabled = false;
         }
-    }
 
-    public override void Exit()
-    {
-        owner.GetComponent<Boid>().maxSpeed -= 10;
-        owner.GetComponent<Boid>().maxForce -= 5;
-        owner.GetComponent<Flee>().enabled = false;
+        owner.GetComponent<StateMachine>().enabled = false;
     }
 }
 
@@ -130,20 +145,6 @@ class LeaderAlive : State
             owner.SetGlobalState(dead);
             return;
         }
-    }
-}
-
-class LeaderDead : State
-{
-    public override void Enter()
-    {
-        SteeringBehaviour[] sbs = owner.GetComponent<Boid>().GetComponents<SteeringBehaviour>();
-        foreach (SteeringBehaviour sb in sbs)
-        {
-            sb.enabled = false;
-        }
-
-        owner.GetComponent<StateMachine>().enabled = false;
     }
 }
 
