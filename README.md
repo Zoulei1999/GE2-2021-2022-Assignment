@@ -13,7 +13,6 @@ After making the project i changed the scene to one similar to a scene from star
 
 [Link to Inspiration](https://www.youtube.com/watch?v=pvKFHYb0oCU)
 
-[Link to Video Demo](https://youtu.be/nQ9CPS6stdQ)
 
 # Description
 - Richard Zou
