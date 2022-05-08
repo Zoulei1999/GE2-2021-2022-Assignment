@@ -48,6 +48,8 @@ After making the project i changed the scene to one similar to a scene from star
 | SteeringBehaviour.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
 | TextureGenerator.cs | From [reference](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) |
 | TieSpawner.cs | Modified From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
+| RandomMovement.cs | Self Written |
+| GenerateAsteroid.cs | Self Written |
 
 # Events
 1. We see star destroyer move in to scene.
@@ -70,3 +72,10 @@ Death Star - https://sketchfab.com/3d-models/death-star-star-wars-699e5f635f7a4b
 Tie Fighters - https://sketchfab.com/3d-models/tie-5bcaa60ed5ce4a51b4233aed418f2280.
 
 Star Destroyer - https://sketchfab.com/3d-models/star-destroyer-aaa18e14129a461c839877389bd28504.
+
+## World Items
+Asteroids - https://assetstore.unity.com/packages/3d/environments/asteroids-pack-84988.
+
+Skybox Volume 2 - https://assetstore.unity.com/packages/2d/textures-materials/sky/skybox-volume-2-nebula-3392.
+
+
