@@ -34,9 +34,6 @@ After making the project i changed the scene to one similar to a scene from star
 | FollowPath.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
 | JitterWander.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
 | Leader.cs | Modified from [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| MapDisplay.cs | From [reference](https://www.youtube.com/watch?v=eJEpeUH1EMg) |
-| MapGenerator.cs | From [reference](https://www.youtube.com/watch?v=JFRiGj9rPa4) |
-| MeshGenerator.cs | From [reference](https://www.youtube.com/watch?v=eJEpeUH1EMg) |
 | Noise.cs | Modified From [reference](https://www.youtube.com/watch?v=JFRiGj9rPa4) |
 | NoiseWander.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
 | ObstacleAvoidance.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
@@ -47,7 +44,6 @@ After making the project i changed the scene to one similar to a scene from star
 | StarFighter.cs |  Modified from [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets)  |
 | StateMachine.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
 | SteeringBehaviour.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| TextureGenerator.cs | From [reference](https://www.youtube.com/channel/UCYbK_tjZ2OrIZFBvU6CCMiA) |
 | TieSpawner.cs | Modified From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
 | RandomMovement.cs | Self Written |
 | GenerateAsteroid.cs | Self Written |
