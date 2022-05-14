@@ -23,28 +23,28 @@ After making the project i changed the scene to one similar to a scene from star
 # Scripts
 | Class/asset | Source |
 |-----------|-----------|
-| Arrive.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| Boid.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| Bullet.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
+| Arrive.cs | From Module GIT |
+| Boid.cs | From Module GIT |
+| Bullet.cs | From Module GIT |
 | CameraFollow.cs | From [reference](https://www.youtube.com/watch?v=MFQhpwc6cKE) |
-| Contain.cs | From [reference](https://github.com/skooter500/GE2-Test-2022-Starter/blob/master/GE2%20Test%202022%20Starter%20Unity/Assets/Constrain.cs) |
-| DestroyerContoller.cs |  Modified from [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets)  |
+| Contain.cs | From Module GIT |
+| DestroyerContoller.cs |  Modified from Module GIT  |
 | EscapeToQuit.cs | From [reference](https://docs.unity3d.com/ScriptReference/Application.Quit.html) |
-| Flee.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| FollowPath.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| JitterWander.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| Leader.cs | Modified from [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
+| Flee.cs | From Module GIT |
+| FollowPath.cs | From Module GIT |
+| JitterWander.cs | From Module GIT |
+| Leader.cs | Modified from Module GIT |
 | Noise.cs | Modified From [reference](https://www.youtube.com/watch?v=JFRiGj9rPa4) |
-| NoiseWander.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| ObstacleAvoidance.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| OffsetPursue.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| Path.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| Pursue.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| Seek.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| StarFighter.cs |  Modified from [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets)  |
-| StateMachine.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| SteeringBehaviour.cs | From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
-| TieSpawner.cs | Modified From [reference](https://github.com/skooter500/GE2-2021-2022/tree/master/GE2%202022/Assets) |
+| NoiseWander.cs | From Module GIT |
+| ObstacleAvoidance.cs | From Module GIT |
+| OffsetPursue.cs | From Module GIT |
+| Path.cs | From Module GIT |
+| Pursue.cs | From Module GIT |
+| Seek.cs | From Module GIT |
+| StarFighter.cs |  Modified from Module GIT  |
+| StateMachine.cs | From Module GIT |
+| SteeringBehaviour.cs | From Module GIT |
+| TieSpawner.cs | Modified From Module GIT |
 | RandomMovement.cs | Self Written |
 | GenerateAsteroid.cs | Self Written |
 
